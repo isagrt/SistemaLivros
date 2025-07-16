@@ -12,5 +12,30 @@ public class SistemaLivros {
             livro.Ler();
             livro.Cadastrar();
             livro.Localizar();
+
+
+            /*Livro de Biblioteca */
+            System.out.println("\nLivro de Biblioteca");
+            LivroDeBiblioteca livrobiblioteca = new LivroDeBiblioteca();
+            livrobiblioteca.codigo = 11;
+            livrobiblioteca.titulo = "Cinderela";
+            livrobiblioteca.autor = "Irmãos Grimm";
+            livrobiblioteca.editora = "Editora xYz";
+            livrobiblioteca.nmrPaginas = 100;
+            livrobiblioteca.edicao = 7;
+            livrobiblioteca.localPrateleira ="InfantilABC";
+            livrobiblioteca.categoria ="Infantil";
+            livrobiblioteca.prazoEntrega =10;
+            livrobiblioteca.nomeQuemEmprestou ="Isadora Goedert";
+             
+
+        
+            livrobiblioteca.Ler();
+            livrobiblioteca.Cadastrar();
+            livrobiblioteca.Localizar();
+            livrobiblioteca.Alugar();
+            livrobiblioteca.Devolver();
         }
+
+
 }
