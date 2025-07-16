@@ -45,8 +45,8 @@ public class SistemaLivros {
             livrolivraria.editora = "Editora 123";
             livrolivraria.nmrPaginas = 10;
             livrolivraria.edicao = 4;
-            livrolivraria.preco = 10;
-            livrolivraria.novoUsado = "Novo";
+            livrolivraria.preco = 10.99;
+            livrolivraria.novoUsado = false;
             livrolivraria.localPrateleira = "Prateleira 123";
             livrolivraria.categoria = "Intantil";
 

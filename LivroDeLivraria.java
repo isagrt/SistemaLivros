@@ -1,6 +1,6 @@
 public class LivroDeLivraria extends Livros{
-    public int preco;
-    public String novoUsado;
+    public Double preco;
+    public boolean novoUsado;
     public String localPrateleira;
     public String categoria;
 
