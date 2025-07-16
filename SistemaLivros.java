@@ -35,6 +35,25 @@ public class SistemaLivros {
             livrobiblioteca.Localizar();
             livrobiblioteca.Alugar();
             livrobiblioteca.Devolver();
+
+            /*Livro de Livraria */
+            System.out.println("\nLivro de Livraria");
+            LivroDeLivraria livrolivraria = new LivroDeLivraria();
+            livrolivraria.codigo = 12;
+            livrolivraria.titulo = "Patinho Feio";
+            livrolivraria.autor = "Ciclano";
+            livrolivraria.editora = "Editora 123";
+            livrolivraria.nmrPaginas = 10;
+            livrolivraria.edicao = 4;
+            livrolivraria.preco = 10;
+            livrolivraria.novoUsado = "Novo";
+            livrolivraria.localPrateleira = "Prateleira 123";
+            livrolivraria.categoria = "Intantil";
+
+            livrolivraria.Ler();
+            livrolivraria.Cadastrar();
+            livrolivraria.Localizar();
+            livrolivraria.Vender();
         }
 
 
