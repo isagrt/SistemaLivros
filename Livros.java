@@ -10,7 +10,7 @@ public class Livros {
 
     //metodos
     public void Ler(){
-        System.out.println("Estou lendo a biografia da Rita lee");
+        System.out.println("Estou lendo...");
     }
 
     public void Cadastrar(){
