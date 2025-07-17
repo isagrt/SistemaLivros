@@ -2,7 +2,7 @@ public class SistemaLivros {
      public static void main(String[] args) {
            
             Livros livro = new Livros();
-            livro.setCodigo(1);
+            livro.setCodigo(01);
             livro.titulo = "Coraline";
             livro.autor = "Fulano";
             livro.editora = "Editora ABC";
@@ -17,7 +17,7 @@ public class SistemaLivros {
             /*Livro de Biblioteca */
             System.out.println("\nLivro de Biblioteca");
             LivroDeBiblioteca livrobiblioteca = new LivroDeBiblioteca();
-            livrobiblioteca.setCodigo(11);
+            livrobiblioteca.codigo = 02;
             livrobiblioteca.titulo = "Cinderela";
             livrobiblioteca.autor = "Irmãos Grimm";
             livrobiblioteca.editora = "Editora xYz";
@@ -54,6 +54,11 @@ public class SistemaLivros {
             livrolivraria.Cadastrar();
             livrolivraria.Localizar();
             livrolivraria.Vender();
+            
+            
+            System.out.println("Codigo do Livro Livraria: " +livrolivraria.getCodigo());
+            System.out.println("Codigo do Livro Biblioteca: " +livrobiblioteca.getCodigo());
+            System.out.println("Codigo do Livro: " +livro.getCodigo());
         }
 
 

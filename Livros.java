@@ -1,6 +1,6 @@
 public class Livros {
     //Atributos
-    private int codigo;
+    protected int codigo;
     public String titulo;
     public String autor;
     public String editora;
