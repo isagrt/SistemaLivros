@@ -1,69 +1,83 @@
 public class Livros {
-    //Atributos
+    // Atributos
     protected int codigo;
     private String titulo;
     private String autor;
     private String editora;
     private int nmrPaginas;
     private int edicao;
-    
 
-    //metodos
+    // metodos
     // Codigo
-    public  int getCodigo(){
-        /*if (usuario == true){
-            return codigo
-        }
-        else {return 0}  // utilizaria para autenticar um usuário, por exeplo, se ele tiver um cadasto etc */
+    public int getCodigo() {
+        /*
+         * if (usuario == true){
+         * return codigo
+         * }
+         * else {return 0} // utilizaria para autenticar um usuário, por exeplo, se ele
+         * tiver um cadasto etc
+         */
         return codigo;
     }
-    public void setCodigo(int valor){
-        codigo = valor; //this.codigo = codigo; >> uma boa pratica para quando a variável tem o mesmo nome que a classe.
+
+    public void setCodigo(int valor) {
+        codigo = valor; // this.codigo = codigo; >> uma boa pratica para quando a variável tem o mesmo
+                        // nome que a classe.
     }
-    //titulo
-    public String getTitulo(){
+
+    // titulo
+    public String getTitulo() {
         return titulo;
     }
-    public void setTitulo(String titulo){
+
+    public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
-    //autor
-    public String getAutor(){
+
+    // autor
+    public String getAutor() {
         return autor;
     }
-    public void setAutor(String autor){
+
+    public void setAutor(String autor) {
         this.autor = autor;
     }
-    //editora
-    public String getEditora(){
+
+    // editora
+    public String getEditora() {
         return editora;
     }
-    public void setEditora(String editora){
+
+    public void setEditora(String editora) {
         this.editora = editora;
     }
-    //numero de paginas
-    public int getNmrPaginas(){
+
+    // numero de paginas
+    public int getNmrPaginas() {
         return nmrPaginas;
     }
-    public void setNmrPaginas(int nmrPaginas){
+
+    public void setNmrPaginas(int nmrPaginas) {
         this.nmrPaginas = nmrPaginas;
     }
-    public int getEdicao(){
+
+    public int getEdicao() {
         return edicao;
     }
-    public void setEdicao(int edicao){
+
+    public void setEdicao(int edicao) {
         this.edicao = edicao;
     }
 
-    public void Ler(){
+    public void Ler() {
         System.out.println("Estou lendo...");
     }
 
-    public void Cadastrar(){
+    public void Cadastrar() {
         System.out.println("Estou cadastrando...");
     }
 
-    public void Localizar(){
+    public void Localizar() {
         System.out.println("Estou procurando...");
     }
 }
