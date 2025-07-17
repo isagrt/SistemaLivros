@@ -8,6 +8,17 @@ public class Livros {
     private int edicao;
 
     // metodos
+
+    //metodo construtor >> não é necessario, pois o programa ja entende que o metodo construtor é este. Mas serve para construir seus obejto com valores default.
+    Livros(){
+        this.codigo = 0;
+        this.titulo = " ";
+        this.autor = " ";
+        this.editora = " ";
+        this.nmrPaginas = 0;
+        this.edicao = 0;
+    }
+
     // Codigo
     public int getCodigo() {
         /*
