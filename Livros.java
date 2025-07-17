@@ -1,6 +1,6 @@
 public class Livros {
     //Atributos
-    public int codigo;
+    private int codigo;
     public String titulo;
     public String autor;
     public String editora;
@@ -9,6 +9,18 @@ public class Livros {
     
 
     //metodos
+    public  int getCodigo(){
+        /*if (usuario == true){
+            return codigo
+        }
+        else {return 0}  // utilizaria para autenticar um usuário, por exeplo, se ele tiver um cadasto etc */
+        return codigo;
+    }
+
+    public void setCodigo(int valor){
+        codigo = valor;
+    }
+
     public void Ler(){
         System.out.println("Estou lendo...");
     }

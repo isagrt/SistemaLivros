@@ -2,7 +2,7 @@ public class SistemaLivros {
      public static void main(String[] args) {
            
             Livros livro = new Livros();
-            livro.codigo = 1;
+            livro.setCodigo(1);
             livro.titulo = "Coraline";
             livro.autor = "Fulano";
             livro.editora = "Editora ABC";
@@ -17,7 +17,7 @@ public class SistemaLivros {
             /*Livro de Biblioteca */
             System.out.println("\nLivro de Biblioteca");
             LivroDeBiblioteca livrobiblioteca = new LivroDeBiblioteca();
-            livrobiblioteca.codigo = 11;
+            livrobiblioteca.setCodigo(11);
             livrobiblioteca.titulo = "Cinderela";
             livrobiblioteca.autor = "Irmãos Grimm";
             livrobiblioteca.editora = "Editora xYz";
@@ -39,7 +39,7 @@ public class SistemaLivros {
             /*Livro de Livraria */
             System.out.println("\nLivro de Livraria");
             LivroDeLivraria livrolivraria = new LivroDeLivraria();
-            livrolivraria.codigo = 12;
+            livrolivraria.setCodigo(21);
             livrolivraria.titulo = "Patinho Feio";
             livrolivraria.autor = "Ciclano";
             livrolivraria.editora = "Editora 123";
