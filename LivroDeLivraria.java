@@ -39,4 +39,9 @@ public class LivroDeLivraria extends Livros {
     public void Vender() {
         System.out.println("Estou vendendo...");
     }
+    
+    @Override //altera o metodo da classe pai (polimorfismo)
+    public void Localizar() {
+        System.out.println("Estou procurando um livro da livraria...");
+    }
 }
