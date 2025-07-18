@@ -58,6 +58,14 @@ public class LivroDeBiblioteca extends Livros { // extends indica que LivroDeBib
     public void Devolver() {
         System.out.println("Estou devolvendo...");
     }
+    @Override
+    public void Ler() {
+        System.out.println("Vim ler este livro na biblioteca...");
+    }
+    @Override
+    public void Cadastrar() {
+        System.out.println("Cadastrei este livro no sistema da biblioteca...");
+    }
     @Override //altera o metodo da classe pai (polimorfismo)
     public void Localizar() {
         System.out.println("Estou procurando um livro da biblioteca...");
