@@ -19,6 +19,24 @@ public class Livros {
         this.edicao = 0;
     }
 
+    Livros(int codigo, String titulo){ //podemos criar outros metodos construtores porem é necessário passar alguns parâmetros para deferencia-los
+        this.codigo = codigo;
+        this.titulo = titulo;
+        this.autor = " ";
+        this.editora = " ";
+        this.nmrPaginas = 0;
+        this.edicao = 0;
+    }
+
+    Livros(int codigo, String titulo, String autor, String editora, int nmrPaginas, int edicao){ //podemos criar outros metodos construtores porem é necessário passar alguns parâmetros para deferencia-los
+        this.codigo = codigo;
+        this.titulo = titulo;
+        this.autor = autor ;
+        this.editora = editora;
+        this.nmrPaginas = nmrPaginas;
+        this.edicao = edicao;
+    }
+
     // Codigo
     public int getCodigo() {
         /*

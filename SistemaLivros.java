@@ -12,14 +12,14 @@ public class SistemaLivros {
         livro.Ler();
         livro.Cadastrar();
         livro.Localizar();
-        String mensagem =  "\nCódigo: "+livro.getCodigo()+
-                                "\nTítulo: "+livro.getTitulo()+
-                                "\nAutor: "+livro.getAutor()+
-                                "\nEditora: "+livro.getEditora()+
-                                "\nNumero de Páginas: "+livro.getNmrPaginas()+
-                                "\nEdiçao: "+livro.getEdicao();
-                            
-        System.out.println("\nLivro"+mensagem);
+        String mensagem = "\nCódigo: " + livro.getCodigo() +
+                "\nTítulo: " + livro.getTitulo() +
+                "\nAutor: " + livro.getAutor() +
+                "\nEditora: " + livro.getEditora() +
+                "\nNumero de Páginas: " + livro.getNmrPaginas() +
+                "\nEdiçao: " + livro.getEdicao();
+
+        System.out.println("\nLivro" + mensagem);
 
         System.out.println("Codigo do Livro: " + livro.getCodigo());
         System.out.println("Titulo: " + livro.getTitulo());
@@ -46,19 +46,19 @@ public class SistemaLivros {
         livrobiblioteca.Localizar();
         livrobiblioteca.Alugar();
         livrobiblioteca.Devolver();
-        
-        mensagem =  "\nCódigo: "+livrobiblioteca.getCodigo()+
-                    "\nTítulo: "+livrobiblioteca.getTitulo()+
-                    "\nAutor: "+livrobiblioteca.getAutor()+
-                    "\nEditora: "+livrobiblioteca.getEditora()+
-                    "\nNumero de Páginas: "+livrobiblioteca.getNmrPaginas()+
-                    "\nEdiçao: "+livrobiblioteca.getEdicao()+
-                    "\nLocal: "+livrobiblioteca.getLocalPrateleira()+
-                    "\nCategoria: "+livrobiblioteca.getCategoria()+
-                    "\nPrazo: "+livrobiblioteca.getPrazoEntrega()+
-                    "\nNome de Quem Emprestou: "+livrobiblioteca.getNomeQuemEmprestou();
 
-        System.out.println("\nLivro de Biblioteca: "+mensagem);
+        mensagem = "\nCódigo: " + livrobiblioteca.getCodigo() +
+                "\nTítulo: " + livrobiblioteca.getTitulo() +
+                "\nAutor: " + livrobiblioteca.getAutor() +
+                "\nEditora: " + livrobiblioteca.getEditora() +
+                "\nNumero de Páginas: " + livrobiblioteca.getNmrPaginas() +
+                "\nEdiçao: " + livrobiblioteca.getEdicao() +
+                "\nLocal: " + livrobiblioteca.getLocalPrateleira() +
+                "\nCategoria: " + livrobiblioteca.getCategoria() +
+                "\nPrazo: " + livrobiblioteca.getPrazoEntrega() +
+                "\nNome de Quem Emprestou: " + livrobiblioteca.getNomeQuemEmprestou();
+
+        System.out.println("\nLivro de Biblioteca: " + mensagem);
 
         /* Livro de Livraria */
         System.out.println("\nLivro de Livraria");
@@ -79,20 +79,28 @@ public class SistemaLivros {
         livrolivraria.Localizar();
         livrolivraria.Vender();
 
-        mensagem =  "\nCodigo: "+livrolivraria.getCodigo()+
-                    "\nTitulo: "+livrolivraria.getTitulo()+
-                    "\nAutor: "+livrolivraria.getAutor()+
-                    "\nEditora: "+livrolivraria.getEditora()+
-                    "\nNumero de Páginas: "+livrolivraria.getNmrPaginas()+
-                    "\nEdicao: "+livrolivraria.getEdicao()+
-                    "\nLocal: "+livrolivraria.getLocalPrateleira()+
-                    "\nCategoria: "+livrolivraria.getCategoria()+
-                    "\nEh novo?: "+livrolivraria.getNovoUsado()+
-                    "\nPreco: R$"+livrolivraria.getPreco();
+        mensagem = "\nCodigo: " + livrolivraria.getCodigo() +
+                "\nTitulo: " + livrolivraria.getTitulo() +
+                "\nAutor: " + livrolivraria.getAutor() +
+                "\nEditora: " + livrolivraria.getEditora() +
+                "\nNumero de Páginas: " + livrolivraria.getNmrPaginas() +
+                "\nEdicao: " + livrolivraria.getEdicao() +
+                "\nLocal: " + livrolivraria.getLocalPrateleira() +
+                "\nCategoria: " + livrolivraria.getCategoria() +
+                "\nEh novo?: " + livrolivraria.getNovoUsado() +
+                "\nPreco: R$" + livrolivraria.getPreco();
 
-        System.out.println("\nLivro de Livraria: "+mensagem);
+        System.out.println("\nLivro de Livraria: " + mensagem);
 
-        
+        // metodo construtor com parâmetros
+        Livros livro2 = new Livros(99, "titanic");
+        System.out.println("\nLivro 2: " + livro2.getTitulo());
+
+        // metodo construtor com todos os parâmetros
+        Livros livro3 = new Livros(1, "A pequena sereia", "Ciclano de Tal", "Dark Side", 500, 1);
+
+        LivroDeBiblioteca livroBiblioteca2 = new LivroDeBiblioteca(3, "BTK", "Roy Wenzl", "Dark Side", 680, 2, "Andar 2", "biografia", 5,
+                "Isadora");
 
     }
 
