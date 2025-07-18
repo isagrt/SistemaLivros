@@ -101,6 +101,7 @@ public class SistemaLivros {
 
         LivroDeBiblioteca livroBiblioteca2 = new LivroDeBiblioteca(3, "BTK", "Roy Wenzl", "Dark Side", 680, 2, "Andar 2", "biografia", 5,
                 "Isadora");
+        System.out.println("Codigo: "+livroBiblioteca2.getCodigo()+"\nTitulo: "+livroBiblioteca2.getTitulo()+"\nAutor: "+livroBiblioteca2.getAutor());
 
     }
 
