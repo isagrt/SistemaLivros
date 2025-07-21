@@ -98,7 +98,7 @@ public class SistemaLivros {
 
         // metodo construtor com todos os parâmetros
         Livros livro3 = new Livros(1, "A pequena sereia", "Ciclano de Tal", "Dark Side", 500, 1);
-
+        System.out.println("\nLivro 3: " + livro3.getTitulo());
         LivroDeBiblioteca livroBiblioteca2 = new LivroDeBiblioteca(3, "BTK", "Roy Wenzl", "Dark Side", 680, 2, "Andar 2", "biografia", 5,
                 "Isadora");
         System.out.println("Codigo: "+livroBiblioteca2.getCodigo()+"\nTitulo: "+livroBiblioteca2.getTitulo()+"\nAutor: "+livroBiblioteca2.getAutor());
